@@ -42,13 +42,6 @@ fn ask_user_for_input() -> std::string::String {
     return user_input;
 }
 
-// fn create_terminal() -> Result<(), io::Error> {
-//     let stdout = io::stdout();
-//     let backend = CrosstermBackend::new(stdout);
-//     let mut terminal = Terminal::new(backend)?;
-//     Ok(())
-// }
-
 fn create_terminal() -> Result<(), io::Error> {
     // setup terminal
     enable_raw_mode()?;
